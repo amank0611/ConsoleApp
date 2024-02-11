@@ -21,7 +21,7 @@
                 var digit = billAmt % 10;
                 if (digit % 2 != 0)
                 {
-                    discount += (int)digit;
+                    discount += (int)digit; 
                 }
                 billAmt /= 10;
             }
