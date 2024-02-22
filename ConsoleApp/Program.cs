@@ -1,31 +1,37 @@
-﻿namespace ConsoleApp
+﻿using System.Diagnostics;
+
+namespace ConsoleApp
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             //input for billAmount
-            Console.WriteLine("Enter total bill amount");
-            long.TryParse(Console.ReadLine(), out long billAmount);
-            long result = CalculateDiscount(billAmount);
-            Console.Write($"final calculated discount is : {result}");
-            Console.ReadKey();
-        }
-        public static int CalculateDiscount(long billAmount)
-        {
-            // Write your code here example 136, 86, 357, 12294
-            int discount = 0;
-            long billAmt = billAmount;
-            while (billAmt > 0)
-            {
-                var digit = billAmt % 10;
-                if (digit % 2 != 0)
-                {
-                    discount += (int)digit; 
-                }
-                billAmt /= 10;
-            }
-            return discount;
+            //Calculate.CalculateDiscount();
+            //Tree.MainFunction();
+            //GFG.MainF();
+         
+
+            //Process process = new ();
+            //process.StartInfo.FileName = "C:\\Program Files (x86)\\smartData Enterprises\\FF.SyncSetup.Download\\FF.Sync.DownloadWorkerService.exe";  // Replace with the actual executable
+            //process.StartInfo.UseShellExecute = false;
+            ////process.StartInfo.CreateNoWindow = true;
+            ////process.StartInfo.RedirectStandardOutput = true;
+            ////process.StartInfo.RedirectStandardError = true;
+            ////process.StartInfo.RedirectStandardInput = true;
+
+            //process.Start();
+
+            // If you want to capture the output, you can read it from the StandardOutput stream
+            //string output = process.StandardOutput.ReadToEnd();
+            //string error = process.StandardError.ReadToEnd();
+
+            //process.WaitForExit();
+
+            //Console.WriteLine("Exit Code: " + process.ExitCode);
+            //Console.WriteLine("Output: " + output);
+            //Console.WriteLine("Error: ");
+
         }
     }
 }
